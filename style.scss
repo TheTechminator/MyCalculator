@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(32, 32, 35);
+    margin: 0px;
+    color: rgb(55, 230, 55);
+    padding: 25px;
+    font-size: 2rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 400px;
+    margin: auto;
+    border: 1px solid rgb(55, 230, 55);
+
+    .screen {
+        flex-basis: 100%;
+        height: 78px;
+        border-bottom: 1px solid rgb(55, 230, 55);
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0 15px 0 15px;
+    }
+
+    .key {
+        flex-basis: calc(25% - 22px);
+        height: 78px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgb(55, 230, 55);
+        margin: 10px;
+        cursor: pointer;
+
+        &:hover {
+            background: rgb(55, 230, 55);
+            color: white;
+        }
+    }
+}
